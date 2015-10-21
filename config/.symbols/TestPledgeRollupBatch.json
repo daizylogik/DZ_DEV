@@ -1,0 +1,890 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "TestPledgeRollupBatch", 
+    "tableDeclaration": {
+        "type": "TestPledgeRollupBatch", 
+        "modifiers": [
+            "private", 
+            "testMethod"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 15, 
+            "line": 4
+        }, 
+        "name": "TestPledgeRollupBatch"
+    }, 
+    "key": "01p61000004xWGCAA2", 
+    "variables": [
+        {
+            "type": "SchedulableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 9
+            }, 
+            "name": "sc"
+        }, 
+        {
+            "type": "PledgeRollupBatch", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 10
+            }, 
+            "name": "p"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 19
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 20
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 53
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 54
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 64, 
+                "line": 86
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 75, 
+                "line": 86
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 87
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 88
+            }, 
+            "name": "payments"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 89
+            }, 
+            "name": "oppContactRoles"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 92
+            }, 
+            "name": "closeDate1"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 93
+            }, 
+            "name": "opp1"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 94
+            }, 
+            "name": "closeDate2"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 95
+            }, 
+            "name": "opp2"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 98
+            }, 
+            "name": "closeDate3"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 99
+            }, 
+            "name": "opp3"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 100
+            }, 
+            "name": "closeDate4"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 101
+            }, 
+            "name": "opp4"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 104
+            }, 
+            "name": "closeDate5"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 105
+            }, 
+            "name": "opp5"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 106
+            }, 
+            "name": "closeDate6"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 107
+            }, 
+            "name": "opp6"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 8, 
+                "line": 108
+            }, 
+            "name": "closeDate7"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 109
+            }, 
+            "name": "opp7"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 135
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 142
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 65, 
+                "line": 148
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 88, 
+                "line": 148
+            }, 
+            "name": "account"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 102, 
+                "line": 148
+            }, 
+            "name": "closeDate"
+        }, 
+        {
+            "type": "Decimal", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 121, 
+                "line": 148
+            }, 
+            "name": "amount"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 136, 
+                "line": 148
+            }, 
+            "name": "stage"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 149
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 58, 
+                "line": 155
+            }, 
+            "name": "account"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 72, 
+                "line": 155
+            }, 
+            "name": "closeDate"
+        }, 
+        {
+            "type": "Decimal", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 91, 
+                "line": 155
+            }, 
+            "name": "amount"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 106, 
+                "line": 155
+            }, 
+            "name": "stage"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 156
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 80, 
+                "line": 161
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 95, 
+                "line": 161
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "OpportunityContactRole", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 162
+            }, 
+            "name": "oppContactRole"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 98, 
+                "line": 167
+            }, 
+            "name": "oppContactRoles"
+        }, 
+        {
+            "type": "Contact", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 123, 
+                "line": 167
+            }, 
+            "name": "c"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 138, 
+                "line": 167
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "OpportunityContactRole", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 168
+            }, 
+            "name": "oppContactRole"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 79, 
+                "line": 174
+            }, 
+            "name": "payments"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 101, 
+                "line": 174
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 114, 
+                "line": 174
+            }, 
+            "name": "paid"
+        }, 
+        {
+            "type": "Decimal", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 128, 
+                "line": 174
+            }, 
+            "name": "amount"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 141, 
+                "line": 174
+            }, 
+            "name": "dt"
+        }, 
+        {
+            "type": "npe01__OppPayment__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 175
+            }, 
+            "name": "payment"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 67, 
+                "line": 181
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Boolean", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 80, 
+                "line": 181
+            }, 
+            "name": "paid"
+        }, 
+        {
+            "type": "Decimal", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 94, 
+                "line": 181
+            }, 
+            "name": "amount"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 107, 
+                "line": 181
+            }, 
+            "name": "dt"
+        }, 
+        {
+            "type": "npe01__OppPayment__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 182
+            }, 
+            "name": "payment"
+        }
+    ], 
+    "id": "01p61000004xWGCAA2", 
+    "methods": [
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "testPledgeRollups", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 7
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "testCalculateAccountRollups", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 18
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "testMethod"
+            ], 
+            "name": "testCalculateContactRollups", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 52
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createOpportunitiesAndPayments", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }, 
+                {
+                    "type": "Contact", 
+                    "name": "c"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 86
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createContact", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 134
+            }, 
+            "returnType": "Contact", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createAccount", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 141
+            }, 
+            "returnType": "Account", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addOpportunity", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "opportunities"
+                }, 
+                {
+                    "type": "Account", 
+                    "name": "account"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "closeDate"
+                }, 
+                {
+                    "type": "Decimal", 
+                    "name": "amount"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "stage"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 148
+            }, 
+            "returnType": "Opportunity", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createOpportunity", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "account"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "closeDate"
+                }, 
+                {
+                    "type": "Decimal", 
+                    "name": "amount"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "stage"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 32, 
+                "line": 155
+            }, 
+            "returnType": "Opportunity", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createOpportunityContactRole", 
+            "parameters": [
+                {
+                    "type": "Contact", 
+                    "name": "c"
+                }, 
+                {
+                    "type": "Opportunity", 
+                    "name": "opp"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 43, 
+                "line": 161
+            }, 
+            "returnType": "OpportunityContactRole", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addOpportunityContactRole", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "oppContactRoles"
+                }, 
+                {
+                    "type": "Contact", 
+                    "name": "c"
+                }, 
+                {
+                    "type": "Opportunity", 
+                    "name": "opp"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 43, 
+                "line": 167
+            }, 
+            "returnType": "OpportunityContactRole", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addPayment", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "payments"
+                }, 
+                {
+                    "type": "Opportunity", 
+                    "name": "opp"
+                }, 
+                {
+                    "type": "Boolean", 
+                    "name": "paid"
+                }, 
+                {
+                    "type": "Decimal", 
+                    "name": "amount"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "dt"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 174
+            }, 
+            "returnType": "npe01__OppPayment__c", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "createPayment", 
+            "parameters": [
+                {
+                    "type": "Opportunity", 
+                    "name": "opp"
+                }, 
+                {
+                    "type": "Boolean", 
+                    "name": "paid"
+                }, 
+                {
+                    "type": "Decimal", 
+                    "name": "amount"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "dt"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 181
+            }, 
+            "returnType": "npe01__OppPayment__c", 
+            "type": null
+        }
+    ]
+}

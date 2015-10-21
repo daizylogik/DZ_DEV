@@ -1,0 +1,67 @@
+{
+    "PledgeAccountRollupBatch.cls": {
+        "createdById": "00561000000TvHLAA0", 
+        "createdByName": "Vladimir Martinov", 
+        "createdDate": "2015-10-21 09:12:15", 
+        "fileName": "unpackaged/classes/PledgeAccountRollupBatch.cls", 
+        "fullName": "PledgeAccountRollupBatch", 
+        "id": "01p61000004xVTWAA2", 
+        "lastModifiedById": "00561000000TvHLAA0", 
+        "lastModifiedByName": "Vladimir Martinov", 
+        "lastModifiedDate": "2015-10-21 09:29:16", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "PledgeContactRollupBatch.cls": {
+        "createdById": "00561000000TvHLAA0", 
+        "createdByName": "Vladimir Martinov", 
+        "createdDate": "2015-10-21 09:17:05", 
+        "fileName": "unpackaged/classes/PledgeContactRollupBatch.cls", 
+        "fullName": "PledgeContactRollupBatch", 
+        "id": "01p61000004xW6JAAU", 
+        "lastModifiedById": "00561000000TvHLAA0", 
+        "lastModifiedByName": "Vladimir Martinov", 
+        "lastModifiedDate": "2015-10-21 09:31:35", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "PledgeRollupBatch.cls": {
+        "createdById": "00561000000TvHLAA0", 
+        "createdByName": "Vladimir Martinov", 
+        "createdDate": "2015-10-21 09:18:04", 
+        "fileName": "unpackaged/classes/PledgeRollupBatch.cls", 
+        "fullName": "PledgeRollupBatch", 
+        "id": "01p61000004xWAWAA2", 
+        "lastModifiedById": "00561000000TvHLAA0", 
+        "lastModifiedByName": "Vladimir Martinov", 
+        "lastModifiedDate": "2015-10-21 09:33:46", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "PledgeRollupUtility.cls": {
+        "createdById": "00561000000TvHLAA0", 
+        "createdByName": "Vladimir Martinov", 
+        "createdDate": "2015-10-21 09:18:42", 
+        "fileName": "unpackaged/classes/PledgeRollupUtility.cls", 
+        "fullName": "PledgeRollupUtility", 
+        "id": "01p61000004xWG7AAM", 
+        "lastModifiedById": "00561000000TvHLAA0", 
+        "lastModifiedByName": "Vladimir Martinov", 
+        "lastModifiedDate": "2015-10-21 09:18:42", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
+    "TestPledgeRollupBatch.cls": {
+        "createdById": "00561000000TvHLAA0", 
+        "createdByName": "Vladimir Martinov", 
+        "createdDate": "2015-10-21 09:19:25", 
+        "fileName": "unpackaged/classes/TestPledgeRollupBatch.cls", 
+        "fullName": "TestPledgeRollupBatch", 
+        "id": "01p61000004xWGCAA2", 
+        "lastModifiedById": "00561000000TvHLAA0", 
+        "lastModifiedByName": "Vladimir Martinov", 
+        "lastModifiedDate": "2015-10-21 09:37:43", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }
+}

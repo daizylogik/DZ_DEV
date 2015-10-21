@@ -1,0 +1,79 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [
+        "System.Schedulable"
+    ], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "PledgeRollupBatch", 
+    "tableDeclaration": {
+        "type": "PledgeRollupBatch", 
+        "modifiers": [
+            "global"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 3
+        }, 
+        "name": "PledgeRollupBatch"
+    }, 
+    "key": "01p61000004xWAWAA2", 
+    "variables": [
+        {
+            "type": "SchedulableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 5
+            }, 
+            "name": "sc"
+        }, 
+        {
+            "type": "PledgeAccountRollupBatch", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 34, 
+                "line": 6
+            }, 
+            "name": "b1"
+        }, 
+        {
+            "type": "PledgeContactRollupBatch", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 9
+            }, 
+            "name": "b2"
+        }
+    ], 
+    "id": "01p61000004xWAWAA2", 
+    "methods": [
+        {
+            "modifiers": [
+                "public"
+            ], 
+            "name": "execute", 
+            "parameters": [
+                {
+                    "type": "SchedulableContext", 
+                    "name": "sc"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 5
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
