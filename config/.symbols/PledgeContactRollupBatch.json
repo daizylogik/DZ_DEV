@@ -3,34 +3,6 @@
         {
             "modifiers": [
                 "private", 
-                "static"
-            ], 
-            "name": "thisYear", 
-            "visibility": "PRIVATE", 
-            "references": [], 
-            "location": {
-                "column": 25, 
-                "line": 4
-            }, 
-            "type": "Integer"
-        }, 
-        {
-            "modifiers": [
-                "private", 
-                "static"
-            ], 
-            "name": "lastyear", 
-            "visibility": "PRIVATE", 
-            "references": [], 
-            "location": {
-                "column": 25, 
-                "line": 5
-            }, 
-            "type": "Integer"
-        }, 
-        {
-            "modifiers": [
-                "private", 
                 "static", 
                 "final"
             ], 
@@ -39,7 +11,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 6
+                "line": 4
             }, 
             "type": "String"
         }, 
@@ -53,7 +25,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 8
+                "line": 6
             }, 
             "type": "String"
         }
@@ -86,7 +58,7 @@
             "references": [], 
             "location": {
                 "column": 48, 
-                "line": 25
+                "line": 23
             }, 
             "name": "bc"
         }, 
@@ -96,7 +68,7 @@
             "references": [], 
             "location": {
                 "column": 66, 
-                "line": 25
+                "line": 23
             }, 
             "name": "scope"
         }, 
@@ -106,7 +78,7 @@
             "references": [], 
             "location": {
                 "column": 63, 
-                "line": 30
+                "line": 28
             }, 
             "name": "bc"
         }, 
@@ -116,7 +88,7 @@
             "references": [], 
             "location": {
                 "column": 47, 
-                "line": 35
+                "line": 33
             }, 
             "name": "bc"
         }, 
@@ -126,7 +98,7 @@
             "references": [], 
             "location": {
                 "column": 28, 
-                "line": 20
+                "line": 18
             }, 
             "name": "b"
         }, 
@@ -136,7 +108,7 @@
             "references": [], 
             "location": {
                 "column": 59, 
-                "line": 40
+                "line": 38
             }, 
             "name": "contacts"
         }, 
@@ -146,7 +118,7 @@
             "references": [], 
             "location": {
                 "column": 32, 
-                "line": 41
+                "line": 39
             }, 
             "name": "oppContactRoles"
         }, 
@@ -156,7 +128,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 43
+                "line": 41
             }, 
             "name": "opportunityIdsSet"
         }, 
@@ -166,7 +138,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 44
+                "line": 42
             }, 
             "name": "opportunityIdsByContact"
         }, 
@@ -176,7 +148,7 @@
             "references": [], 
             "location": {
                 "column": 31, 
-                "line": 45
+                "line": 43
             }, 
             "name": "ocr"
         }, 
@@ -186,7 +158,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 53
+                "line": 51
             }, 
             "name": "opportunitiesMap"
         }, 
@@ -196,7 +168,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 58
+                "line": 56
             }, 
             "name": "opportunitiesByContact"
         }, 
@@ -206,7 +178,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 59
+                "line": 57
             }, 
             "name": "paymentsByContact"
         }, 
@@ -216,7 +188,7 @@
             "references": [], 
             "location": {
                 "column": 16, 
-                "line": 61
+                "line": 59
             }, 
             "name": "contact"
         }, 
@@ -226,7 +198,7 @@
             "references": [], 
             "location": {
                 "column": 86, 
-                "line": 70
+                "line": 68
             }, 
             "name": "opportunityIdsByContact"
         }, 
@@ -236,7 +208,7 @@
             "references": [], 
             "location": {
                 "column": 41, 
-                "line": 71
+                "line": 69
             }, 
             "name": "opportunitiesMap"
         }, 
@@ -246,7 +218,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 73
+                "line": 71
             }, 
             "name": "opportunitiesByContact"
         }, 
@@ -256,7 +228,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 75
+                "line": 73
             }, 
             "name": "contactId"
         }, 
@@ -266,7 +238,7 @@
             "references": [], 
             "location": {
                 "column": 12, 
-                "line": 76
+                "line": 74
             }, 
             "name": "oppId"
         }, 
@@ -276,7 +248,7 @@
             "references": [], 
             "location": {
                 "column": 17, 
-                "line": 77
+                "line": 75
             }, 
             "name": "opp"
         }, 
@@ -286,7 +258,7 @@
             "references": [], 
             "location": {
                 "column": 90, 
-                "line": 91
+                "line": 89
             }, 
             "name": "opportunityIdsByContact"
         }, 
@@ -296,7 +268,7 @@
             "references": [], 
             "location": {
                 "column": 42, 
-                "line": 92
+                "line": 90
             }, 
             "name": "opportunitiesMap"
         }, 
@@ -306,7 +278,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 94
+                "line": 92
             }, 
             "name": "paymentsByContact"
         }, 
@@ -316,7 +288,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 96
+                "line": 94
             }, 
             "name": "payments"
         }, 
@@ -326,7 +298,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 104
+                "line": 98
             }, 
             "name": "paymentByOppId"
         }, 
@@ -336,7 +308,7 @@
             "references": [], 
             "location": {
                 "column": 29, 
-                "line": 105
+                "line": 99
             }, 
             "name": "payment"
         }, 
@@ -346,7 +318,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 113
+                "line": 107
             }, 
             "name": "contactId"
         }, 
@@ -356,7 +328,7 @@
             "references": [], 
             "location": {
                 "column": 12, 
-                "line": 114
+                "line": 108
             }, 
             "name": "oppId"
         }, 
@@ -366,7 +338,7 @@
             "references": [], 
             "location": {
                 "column": 32, 
-                "line": 115
+                "line": 109
             }, 
             "name": "paymentsList"
         }, 
@@ -376,7 +348,7 @@
             "references": [], 
             "location": {
                 "column": 32, 
-                "line": 117
+                "line": 111
             }, 
             "name": "payment"
         }, 
@@ -386,7 +358,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 131
+                "line": 125
             }, 
             "name": "c"
         }, 
@@ -396,7 +368,7 @@
             "references": [], 
             "location": {
                 "column": 70, 
-                "line": 131
+                "line": 125
             }, 
             "name": "payments"
         }, 
@@ -406,7 +378,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 133
+                "line": 127
             }, 
             "name": "payment"
         }, 
@@ -416,7 +388,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 140
+                "line": 134
             }, 
             "name": "c"
         }, 
@@ -426,7 +398,7 @@
             "references": [], 
             "location": {
                 "column": 64, 
-                "line": 140
+                "line": 134
             }, 
             "name": "payment"
         }, 
@@ -436,7 +408,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 159
+                "line": 153
             }, 
             "name": "c"
         }, 
@@ -446,7 +418,7 @@
             "references": [], 
             "location": {
                 "column": 61, 
-                "line": 159
+                "line": 153
             }, 
             "name": "opportunities"
         }, 
@@ -456,7 +428,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 161
+                "line": 155
             }, 
             "name": "opp"
         }, 
@@ -466,7 +438,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 168
+                "line": 162
             }, 
             "name": "c"
         }, 
@@ -476,7 +448,7 @@
             "references": [], 
             "location": {
                 "column": 55, 
-                "line": 168
+                "line": 162
             }, 
             "name": "opp"
         }, 
@@ -486,7 +458,7 @@
             "references": [], 
             "location": {
                 "column": 49, 
-                "line": 187
+                "line": 181
             }, 
             "name": "c"
         }
@@ -512,7 +484,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 25
+                "line": 23
             }, 
             "returnType": "void", 
             "type": null
@@ -532,7 +504,7 @@
             "references": [], 
             "location": {
                 "column": 31, 
-                "line": 30
+                "line": 28
             }, 
             "returnType": "QueryLocator", 
             "type": null
@@ -552,7 +524,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 35
+                "line": 33
             }, 
             "returnType": "void", 
             "type": null
@@ -569,7 +541,7 @@
             "references": [], 
             "location": {
                 "column": 25, 
-                "line": 19
+                "line": 17
             }, 
             "returnType": "void", 
             "type": null
@@ -590,7 +562,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 40
+                "line": 38
             }, 
             "returnType": "void", 
             "type": null
@@ -615,7 +587,7 @@
             "references": [], 
             "location": {
                 "column": 44, 
-                "line": 70
+                "line": 68
             }, 
             "returnType": "Map", 
             "type": null
@@ -640,7 +612,7 @@
             "references": [], 
             "location": {
                 "column": 53, 
-                "line": 91
+                "line": 89
             }, 
             "returnType": "Map", 
             "type": null
@@ -665,7 +637,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 131
+                "line": 125
             }, 
             "returnType": "void", 
             "type": null
@@ -690,7 +662,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 140
+                "line": 134
             }, 
             "returnType": "void", 
             "type": null
@@ -715,7 +687,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 159
+                "line": 153
             }, 
             "returnType": "void", 
             "type": null
@@ -740,7 +712,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 168
+                "line": 162
             }, 
             "returnType": "void", 
             "type": null
@@ -761,7 +733,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 187
+                "line": 181
             }, 
             "returnType": "void", 
             "type": null

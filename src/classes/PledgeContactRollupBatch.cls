@@ -1,8 +1,6 @@
 // created by Vladimir Martinov @ daizylogik
 // contact rollup batch job
 global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
-	private static integer thisYear = date.today().year();
-	private static integer lastyear = date.today().addYears(-1).year();
 	private static final string STAGE = 'Pledged';
 
 	private static string query = 'select id, dz_Pledge_Payment_Amt_Recvd_Current_CY__c, ' +
@@ -93,13 +91,9 @@ global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 																			
 		Map<id, List<npe01__OppPayment__c>> paymentsByContact = new Map<id, List<npe01__OppPayment__c>>();
 		
-		List<npe01__OppPayment__c> payments = [select id, npe01__Payment_Amount__c, npe01__Payment_Date__c, npe01__Opportunity__c
+		List<npe01__OppPayment__c> payments = [select id, npe01__Payment_Amount__c, npe01__Opportunity__r.CloseDate, npe01__Opportunity__c
 												from npe01__OppPayment__c
-												where npe01__Opportunity__c in :opportunitiesMap.keySet() and npe01__Paid__c = true 
-												and (CALENDAR_YEAR(npe01__Payment_Date__c) = :thisYear or 
-												CALENDAR_YEAR(npe01__Payment_Date__c) = :lastYear or 
-												FISCAL_YEAR(npe01__Payment_Date__c) = :thisYear or 
-												FISCAL_YEAR(npe01__Payment_Date__c) = :lastYear)];
+												where npe01__Opportunity__c in :opportunitiesMap.keySet() and npe01__Paid__c = true];
 												
 		Map<id, List<npe01__OppPayment__c>> paymentByOppId = new Map<id, List<npe01__OppPayment__c>>();
 		for (npe01__OppPayment__c payment : payments) {
@@ -138,19 +132,19 @@ global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 	
 	// add totals for payment
 	private static void addTotals(Contact c, npe01__OppPayment__c payment) {
-		if (PledgeRollupUtility.isInCurrentCY(payment.npe01__Payment_Date__c)) {
+		if (PledgeRollupUtility.isInCurrentCY(payment.npe01__Opportunity__r.CloseDate)) {
 			c.dz_Pledge_Payment_Amt_Recvd_Current_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}  
 		
-		if (PledgeRollupUtility.isInCurrentFY(payment.npe01__Payment_Date__c)) {
+		if (PledgeRollupUtility.isInCurrentFY(payment.npe01__Opportunity__r.CloseDate)) {
 			c.dz_Pledge_Payment_Amt_Recvd_Current_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		} 
 		
-		if (PledgeRollupUtility.isInPreviousCY(payment.npe01__Payment_Date__c)) {
+		if (PledgeRollupUtility.isInPreviousCY(payment.npe01__Opportunity__r.CloseDate)) {
 			c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}
 		
-		if (PledgeRollupUtility.isInPreviousFY(payment.npe01__Payment_Date__c)) {
+		if (PledgeRollupUtility.isInPreviousFY(payment.npe01__Opportunity__r.CloseDate)) {
 			c.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}
 	}

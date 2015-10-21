@@ -3,34 +3,6 @@
         {
             "modifiers": [
                 "private", 
-                "static"
-            ], 
-            "name": "thisYear", 
-            "visibility": "PRIVATE", 
-            "references": [], 
-            "location": {
-                "column": 25, 
-                "line": 4
-            }, 
-            "type": "Integer"
-        }, 
-        {
-            "modifiers": [
-                "private", 
-                "static"
-            ], 
-            "name": "lastyear", 
-            "visibility": "PRIVATE", 
-            "references": [], 
-            "location": {
-                "column": 25, 
-                "line": 5
-            }, 
-            "type": "Integer"
-        }, 
-        {
-            "modifiers": [
-                "private", 
                 "static", 
                 "final"
             ], 
@@ -39,7 +11,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 6
+                "line": 4
             }, 
             "type": "String"
         }, 
@@ -53,7 +25,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 8
+                "line": 6
             }, 
             "type": "String"
         }
@@ -86,7 +58,7 @@
             "references": [], 
             "location": {
                 "column": 48, 
-                "line": 25
+                "line": 23
             }, 
             "name": "bc"
         }, 
@@ -96,7 +68,7 @@
             "references": [], 
             "location": {
                 "column": 66, 
-                "line": 25
+                "line": 23
             }, 
             "name": "scope"
         }, 
@@ -106,7 +78,7 @@
             "references": [], 
             "location": {
                 "column": 63, 
-                "line": 30
+                "line": 28
             }, 
             "name": "bc"
         }, 
@@ -116,7 +88,7 @@
             "references": [], 
             "location": {
                 "column": 47, 
-                "line": 35
+                "line": 33
             }, 
             "name": "bc"
         }, 
@@ -126,7 +98,7 @@
             "references": [], 
             "location": {
                 "column": 28, 
-                "line": 20
+                "line": 18
             }, 
             "name": "b"
         }, 
@@ -136,9 +108,19 @@
             "references": [], 
             "location": {
                 "column": 59, 
-                "line": 40
+                "line": 38
             }, 
             "name": "accounts"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 39
+            }, 
+            "name": "opportunities"
         }, 
         {
             "type": "Map", 
@@ -146,7 +128,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 41
+                "line": 44
             }, 
             "name": "opportunitiesByAccount"
         }, 
@@ -156,7 +138,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 42
+                "line": 45
             }, 
             "name": "paymentsByAccount"
         }, 
@@ -166,7 +148,7 @@
             "references": [], 
             "location": {
                 "column": 16, 
-                "line": 44
+                "line": 47
             }, 
             "name": "account"
         }, 
@@ -175,10 +157,10 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 82, 
-                "line": 53
+                "column": 86, 
+                "line": 56
             }, 
-            "name": "accounts"
+            "name": "opportunities"
         }, 
         {
             "type": "Map", 
@@ -186,19 +168,9 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 54
+                "line": 57
             }, 
             "name": "opportunitiesByAccount"
-        }, 
-        {
-            "type": "LIST", 
-            "modifiers": [], 
-            "references": [], 
-            "location": {
-                "column": 21, 
-                "line": 56
-            }, 
-            "name": "opportunities"
         }, 
         {
             "type": "Opportunity", 
@@ -206,7 +178,7 @@
             "references": [], 
             "location": {
                 "column": 20, 
-                "line": 61
+                "line": 59
             }, 
             "name": "opp"
         }, 
@@ -215,10 +187,10 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 86, 
-                "line": 72
+                "column": 90, 
+                "line": 70
             }, 
-            "name": "accounts"
+            "name": "opportunities"
         }, 
         {
             "type": "Map", 
@@ -226,7 +198,7 @@
             "references": [], 
             "location": {
                 "column": 39, 
-                "line": 73
+                "line": 71
             }, 
             "name": "paymentsByAccount"
         }, 
@@ -236,7 +208,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 75
+                "line": 73
             }, 
             "name": "payments"
         }, 
@@ -246,7 +218,7 @@
             "references": [], 
             "location": {
                 "column": 29, 
-                "line": 83
+                "line": 78
             }, 
             "name": "payment"
         }, 
@@ -256,7 +228,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 94
+                "line": 89
             }, 
             "name": "a"
         }, 
@@ -266,7 +238,7 @@
             "references": [], 
             "location": {
                 "column": 70, 
-                "line": 94
+                "line": 89
             }, 
             "name": "payments"
         }, 
@@ -276,7 +248,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 96
+                "line": 91
             }, 
             "name": "payment"
         }, 
@@ -286,7 +258,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 103
+                "line": 98
             }, 
             "name": "a"
         }, 
@@ -296,7 +268,7 @@
             "references": [], 
             "location": {
                 "column": 64, 
-                "line": 103
+                "line": 98
             }, 
             "name": "payment"
         }, 
@@ -306,7 +278,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 122
+                "line": 117
             }, 
             "name": "a"
         }, 
@@ -316,7 +288,7 @@
             "references": [], 
             "location": {
                 "column": 61, 
-                "line": 122
+                "line": 117
             }, 
             "name": "opportunities"
         }, 
@@ -326,7 +298,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 124
+                "line": 119
             }, 
             "name": "opp"
         }, 
@@ -336,7 +308,7 @@
             "references": [], 
             "location": {
                 "column": 40, 
-                "line": 131
+                "line": 126
             }, 
             "name": "a"
         }, 
@@ -346,7 +318,7 @@
             "references": [], 
             "location": {
                 "column": 55, 
-                "line": 131
+                "line": 126
             }, 
             "name": "opp"
         }, 
@@ -356,7 +328,7 @@
             "references": [], 
             "location": {
                 "column": 49, 
-                "line": 150
+                "line": 145
             }, 
             "name": "a"
         }
@@ -382,7 +354,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 25
+                "line": 23
             }, 
             "returnType": "void", 
             "type": null
@@ -402,7 +374,7 @@
             "references": [], 
             "location": {
                 "column": 31, 
-                "line": 30
+                "line": 28
             }, 
             "returnType": "QueryLocator", 
             "type": null
@@ -422,7 +394,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 35
+                "line": 33
             }, 
             "returnType": "void", 
             "type": null
@@ -439,7 +411,7 @@
             "references": [], 
             "location": {
                 "column": 25, 
-                "line": 19
+                "line": 17
             }, 
             "returnType": "void", 
             "type": null
@@ -460,7 +432,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 40
+                "line": 38
             }, 
             "returnType": "void", 
             "type": null
@@ -474,14 +446,14 @@
             "parameters": [
                 {
                     "type": "LIST", 
-                    "name": "accounts"
+                    "name": "opportunities"
                 }
             ], 
             "visibility": "PRIVATE", 
             "references": [], 
             "location": {
                 "column": 44, 
-                "line": 53
+                "line": 56
             }, 
             "returnType": "Map", 
             "type": null
@@ -495,14 +467,14 @@
             "parameters": [
                 {
                     "type": "LIST", 
-                    "name": "accounts"
+                    "name": "opportunities"
                 }
             ], 
             "visibility": "PRIVATE", 
             "references": [], 
             "location": {
                 "column": 53, 
-                "line": 72
+                "line": 70
             }, 
             "returnType": "Map", 
             "type": null
@@ -527,7 +499,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 94
+                "line": 89
             }, 
             "returnType": "void", 
             "type": null
@@ -552,7 +524,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 103
+                "line": 98
             }, 
             "returnType": "void", 
             "type": null
@@ -577,7 +549,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 122
+                "line": 117
             }, 
             "returnType": "void", 
             "type": null
@@ -602,7 +574,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 131
+                "line": 126
             }, 
             "returnType": "void", 
             "type": null
@@ -623,7 +595,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 150
+                "line": 145
             }, 
             "returnType": "void", 
             "type": null

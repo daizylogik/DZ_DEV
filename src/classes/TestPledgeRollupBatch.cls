@@ -42,9 +42,9 @@ private class TestPledgeRollupBatch {
 		system.assertEquals(150, a.dz_Total_Pledges_Previous_FY__c);
 		
 		// payment totals
-		system.assertEquals(1109, a.dz_Pledge_Payment_Amt_Recvd_Current_CY__c);
-		system.assertEquals(40, a.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
-		system.assertEquals(1010, a.dz_Pledge_Payment_Amt_Recvd_Current_FY__c);
+		system.assertEquals(109, a.dz_Pledge_Payment_Amt_Recvd_Current_CY__c);
+		system.assertEquals(65, a.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
+		system.assertEquals(10, a.dz_Pledge_Payment_Amt_Recvd_Current_FY__c);
 		system.assertEquals(99, a.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c);
     }
     
@@ -77,7 +77,7 @@ private class TestPledgeRollupBatch {
 		
 		// payment totals
 		system.assertEquals(109, c.dz_Pledge_Payment_Amt_Recvd_Current_CY__c);
-		system.assertEquals(40, c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
+		system.assertEquals(65, c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
 		system.assertEquals(10, c.dz_Pledge_Payment_Amt_Recvd_Current_FY__c);
 		system.assertEquals(99, c.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c);
     }
