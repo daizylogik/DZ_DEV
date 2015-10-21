@@ -25,27 +25,27 @@ private class TestPledgeRollupBatch {
 		PledgeAccountRollupBatch.calculatePledgeAccountRollups();
 		Test.stopTest();
 		
-		a = [select id, dz_Pledge_Payment_Amt_Recvd_Current_CY__c,
-						dz_Pledge_Payment_Amt_Recvd_Current_FY__c,
-						dz_Pledge_Payment_Amt_Recvd_Previous_CY__c,
-						dz_Pledge_Payment_Amt_Recvd_Previous_FY__c,
-						dz_Total_Pledges_Current_CY__c,
-						dz_Total_Pledges_Current_FY__c,
-						dz_Total_Pledges_Previous_CY__c,
-						dz_Total_Pledges_Previous_FY__c
+		a = [select id, Pledge_Payment_Amt_Recvd_Current_CY__c,
+						Pledge_Payment_Amt_Recvd_Current_FY__c,
+						Pledge_Payment_Amt_Recvd_Previous_CY__c,
+						Pledge_Payment_Amt_Recvd_Previous_FY__c,
+						Total_Pledges_Current_CY__c,
+						Total_Pledges_Current_FY__c,
+						Total_Pledges_Previous_CY__c,
+						Total_Pledges_Previous_FY__c
 						from Account where id = :a.id];
 						
 		// pledge totals
-		system.assertEquals(190, a.dz_Total_Pledges_Current_CY__c);
-		system.assertEquals(110, a.dz_Total_Pledges_Previous_CY__c);
-		system.assertEquals(40, a.dz_Total_Pledges_Current_FY__c);
-		system.assertEquals(150, a.dz_Total_Pledges_Previous_FY__c);
+		system.assertEquals(190, a.Total_Pledges_Current_CY__c);
+		system.assertEquals(110, a.Total_Pledges_Previous_CY__c);
+		system.assertEquals(40, a.Total_Pledges_Current_FY__c);
+		system.assertEquals(150, a.Total_Pledges_Previous_FY__c);
 		
 		// payment totals
-		system.assertEquals(109, a.dz_Pledge_Payment_Amt_Recvd_Current_CY__c);
-		system.assertEquals(65, a.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
-		system.assertEquals(10, a.dz_Pledge_Payment_Amt_Recvd_Current_FY__c);
-		system.assertEquals(99, a.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c);
+		system.assertEquals(109, a.Pledge_Payment_Amt_Recvd_Current_CY__c);
+		system.assertEquals(65, a.Pledge_Payment_Amt_Recvd_Previous_CY__c);
+		system.assertEquals(10, a.Pledge_Payment_Amt_Recvd_Current_FY__c);
+		system.assertEquals(99, a.Pledge_Payment_Amt_Recvd_Previous_FY__c);
     }
     
     // test the account rollups
@@ -59,27 +59,27 @@ private class TestPledgeRollupBatch {
 		PledgeContactRollupBatch.calculatePledgeContactRollups();
 		Test.stopTest();
 		
-    	c = [select id, dz_Pledge_Payment_Amt_Recvd_Current_CY__c,
-						dz_Pledge_Payment_Amt_Recvd_Current_FY__c,
-						dz_Pledge_Payment_Amt_Recvd_Previous_CY__c,
-						dz_Pledge_Payment_Amt_Recvd_Previous_FY__c,
-						dz_Total_Pledges_Current_CY__c,
-						dz_Total_Pledges_Current_FY__c,
-						dz_Total_Pledges_Previous_CY__c,
-						dz_Total_Pledges_Previous_FY__c
+    	c = [select id, Pledge_Payment_Amt_Recvd_Current_CY__c,
+						Pledge_Payment_Amt_Recvd_Current_FY__c,
+						Pledge_Payment_Amt_Recvd_Previous_CY__c,
+						Pledge_Payment_Amt_Recvd_Previous_FY__c,
+						Total_Pledges_Current_CY__c,
+						Total_Pledges_Current_FY__c,
+						Total_Pledges_Previous_CY__c,
+						Total_Pledges_Previous_FY__c
 						from Contact where id = :c.id];
 						
 		// pledge totals
-		system.assertEquals(190, c.dz_Total_Pledges_Current_CY__c);
-		system.assertEquals(110, c.dz_Total_Pledges_Previous_CY__c);
-		system.assertEquals(40, c.dz_Total_Pledges_Current_FY__c);
-		system.assertEquals(150, c.dz_Total_Pledges_Previous_FY__c);
+		system.assertEquals(190, c.Total_Pledges_Current_CY__c);
+		system.assertEquals(110, c.Total_Pledges_Previous_CY__c);
+		system.assertEquals(40, c.Total_Pledges_Current_FY__c);
+		system.assertEquals(150, c.Total_Pledges_Previous_FY__c);
 		
 		// payment totals
-		system.assertEquals(109, c.dz_Pledge_Payment_Amt_Recvd_Current_CY__c);
-		system.assertEquals(65, c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c);
-		system.assertEquals(10, c.dz_Pledge_Payment_Amt_Recvd_Current_FY__c);
-		system.assertEquals(99, c.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c);
+		system.assertEquals(109, c.Pledge_Payment_Amt_Recvd_Current_CY__c);
+		system.assertEquals(65, c.Pledge_Payment_Amt_Recvd_Previous_CY__c);
+		system.assertEquals(10, c.Pledge_Payment_Amt_Recvd_Current_FY__c);
+		system.assertEquals(99, c.Pledge_Payment_Amt_Recvd_Previous_FY__c);
     }
     
     // create opps and payments

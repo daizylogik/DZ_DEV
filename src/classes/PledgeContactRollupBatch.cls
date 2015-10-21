@@ -3,14 +3,14 @@
 global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 	private static final string STAGE = 'Pledged';
 
-	private static string query = 'select id, dz_Pledge_Payment_Amt_Recvd_Current_CY__c, ' +
-											'dz_Pledge_Payment_Amt_Recvd_Current_FY__c, ' +
-											'dz_Pledge_Payment_Amt_Recvd_Previous_CY__c, ' +
-											'dz_Pledge_Payment_Amt_Recvd_Previous_FY__c, ' +
-											'dz_Total_Pledges_Current_CY__c, ' +
-											'dz_Total_Pledges_Current_FY__c, ' +
-											'dz_Total_Pledges_Previous_CY__c, ' +
-											'dz_Total_Pledges_Previous_FY__c ' +
+	private static string query = 'select id, Pledge_Payment_Amt_Recvd_Current_CY__c, ' +
+											'Pledge_Payment_Amt_Recvd_Current_FY__c, ' +
+											'Pledge_Payment_Amt_Recvd_Previous_CY__c, ' +
+											'Pledge_Payment_Amt_Recvd_Previous_FY__c, ' +
+											'Total_Pledges_Current_CY__c, ' +
+											'Total_Pledges_Current_FY__c, ' +
+											'Total_Pledges_Previous_CY__c, ' +
+											'Total_Pledges_Previous_FY__c ' +
 											'from Contact';
 
 	// web method
@@ -133,19 +133,19 @@ global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 	// add totals for payment
 	private static void addTotals(Contact c, npe01__OppPayment__c payment) {
 		if (PledgeRollupUtility.isInCurrentCY(payment.npe01__Opportunity__r.CloseDate)) {
-			c.dz_Pledge_Payment_Amt_Recvd_Current_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
+			c.Pledge_Payment_Amt_Recvd_Current_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}  
 		
 		if (PledgeRollupUtility.isInCurrentFY(payment.npe01__Opportunity__r.CloseDate)) {
-			c.dz_Pledge_Payment_Amt_Recvd_Current_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
+			c.Pledge_Payment_Amt_Recvd_Current_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		} 
 		
 		if (PledgeRollupUtility.isInPreviousCY(payment.npe01__Opportunity__r.CloseDate)) {
-			c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
+			c.Pledge_Payment_Amt_Recvd_Previous_CY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}
 		
 		if (PledgeRollupUtility.isInPreviousFY(payment.npe01__Opportunity__r.CloseDate)) {
-			c.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
+			c.Pledge_Payment_Amt_Recvd_Previous_FY__c += payment.npe01__Payment_Amount__c == null ? 0 : payment.npe01__Payment_Amount__c;
 		}
 	}
 	
@@ -161,31 +161,31 @@ global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 	//add totals for opp
 	private static void addTotals(Contact c, Opportunity opp) {
 		if (PledgeRollupUtility.isInCurrentCY(opp.CloseDate)) {
-			c.dz_Total_Pledges_Current_CY__c += opp.Amount == null ? 0 : opp.Amount;
+			c.Total_Pledges_Current_CY__c += opp.Amount == null ? 0 : opp.Amount;
 		}  
 		
 		if (PledgeRollupUtility.isInCurrentFY(opp.CloseDate)) {
-			c.dz_Total_Pledges_Current_FY__c += opp.Amount == null ? 0 : opp.Amount;
+			c.Total_Pledges_Current_FY__c += opp.Amount == null ? 0 : opp.Amount;
 		} 
 		
 		if (PledgeRollupUtility.isInPreviousCY(opp.CloseDate)) {
-			c.dz_Total_Pledges_Previous_CY__c += opp.Amount == null ? 0 : opp.Amount;
+			c.Total_Pledges_Previous_CY__c += opp.Amount == null ? 0 : opp.Amount;
 		}
 		
 		if (PledgeRollupUtility.isInPreviousFY(opp.CloseDate)) {
-			c.dz_Total_Pledges_Previous_FY__c += opp.Amount == null ? 0 : opp.Amount;
+			c.Total_Pledges_Previous_FY__c += opp.Amount == null ? 0 : opp.Amount;
 		}
 	}
 	
 	// clear totals
 	private static void resetContactTotals(Contact c) {
-		c.dz_Pledge_Payment_Amt_Recvd_Current_CY__c = 0;
-		c.dz_Pledge_Payment_Amt_Recvd_Current_FY__c = 0;
-		c.dz_Pledge_Payment_Amt_Recvd_Previous_CY__c = 0;
-		c.dz_Pledge_Payment_Amt_Recvd_Previous_FY__c = 0;
-		c.dz_Total_Pledges_Current_CY__c = 0;
-		c.dz_Total_Pledges_Current_FY__c = 0;
-		c.dz_Total_Pledges_Previous_CY__c = 0;
-		c.dz_Total_Pledges_Previous_FY__c = 0;
+		c.Pledge_Payment_Amt_Recvd_Current_CY__c = 0;
+		c.Pledge_Payment_Amt_Recvd_Current_FY__c = 0;
+		c.Pledge_Payment_Amt_Recvd_Previous_CY__c = 0;
+		c.Pledge_Payment_Amt_Recvd_Previous_FY__c = 0;
+		c.Total_Pledges_Current_CY__c = 0;
+		c.Total_Pledges_Current_FY__c = 0;
+		c.Total_Pledges_Previous_CY__c = 0;
+		c.Total_Pledges_Previous_FY__c = 0;
 	}
 }
