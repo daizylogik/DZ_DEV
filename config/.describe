@@ -486,7 +486,7 @@
             "xmlName": "Settings"
         }
     ],
-    "organizationNamespace": "",
+    "organizationNamespace": "dzk",
     "partialSaveAllowed": true,
     "testRequired": false
 }

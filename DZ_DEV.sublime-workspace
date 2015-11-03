@@ -51,7 +51,7 @@
 			"file": "src/classes/PledgeAccountRollupBatch.cls",
 			"settings":
 			{
-				"buffer_size": 5891,
+				"buffer_size": 5819,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "src/classes/PledgeContactRollupBatch.cls",
 			"settings":
 			{
-				"buffer_size": 7523,
+				"buffer_size": 7451,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +67,7 @@
 			"file": "src/classes/TestPledgeRollupBatch.cls",
 			"settings":
 			{
-				"buffer_size": 7755,
+				"buffer_size": 7659,
 				"line_ending": "Unix"
 			}
 		}
@@ -205,15 +205,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5891,
+						"buffer_size": 5819,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2816,
-								2847
+								0,
+								0
 							]
 						],
 						"settings":
@@ -233,15 +233,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7523,
+						"buffer_size": 7451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5209,
-								5209
+								0,
+								0
 							]
 						],
 						"settings":
@@ -261,15 +261,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7755,
+						"buffer_size": 7659,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2778,
-								2778
+								670,
+								990
 							]
 						],
 						"settings":
