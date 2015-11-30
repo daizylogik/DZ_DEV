@@ -1,4 +1,1 @@
-{
-    "accessToken": "00D61000000cRCH!ARgAQETIYL3jAIRGfPhG3o05QWx76FGpcIDO3Jv0F.boY_KCgXRUsIDUeKJgae4LKqZ7LiF.zOXjVBXfWMLFi4hYHd_hbAU1",
-    "instanceUrl": "https://na34.salesforce.com"
-}
+{"metadata_server_url": "https://na34.salesforce.com/services/Soap/m/31.0/00D61000000cRCH", "endpoint": "https://www.salesforce.com/services/Soap/u/31.0", "user_id": "00561000000TvHLAA0", "server_url": "https://na34.salesforce.com/services/Soap/u/31.0/00D61000000cRCH", "sid": "00D61000000cRCH!ARgAQIov72iAKtY8VSf38PayE4l_zBajdCsSWsvd9BRJy2yX4t09lgou5aQgg3V9oMMQQOBCSXLJCIuzzwmXmYZ4wuLbFPpB"}

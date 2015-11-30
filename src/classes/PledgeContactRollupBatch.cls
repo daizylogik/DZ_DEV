@@ -1,6 +1,6 @@
 // created by Vladimir Martinov @ daizylogik
 // contact rollup batch job
-global class PledgeContactRollupBatch implements Database.Batchable<sObject>{
+global with sharing class PledgeContactRollupBatch implements Database.Batchable<sObject>{
 	private static final string STAGE = 'Pledged';
 
 	private static string query = 'select id, Pledge_Payment_Amt_Recvd_Current_CY__c, ' +

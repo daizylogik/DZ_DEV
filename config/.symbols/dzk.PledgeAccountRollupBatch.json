@@ -1,0 +1,605 @@
+{
+    "properties": [
+        {
+            "modifiers": [
+                "private", 
+                "static", 
+                "final"
+            ], 
+            "name": "STAGE", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 4
+            }, 
+            "type": "String"
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "query", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 6
+            }, 
+            "type": "String"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [
+        "Database.Batchable"
+    ], 
+    "constructors": [], 
+    "namespace": "dzk", 
+    "name": "PledgeAccountRollupBatch", 
+    "tableDeclaration": {
+        "type": "PledgeAccountRollupBatch", 
+        "modifiers": [
+            "global", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 3
+        }, 
+        "name": "PledgeAccountRollupBatch"
+    }, 
+    "key": "01p61000004xVTWAA2", 
+    "variables": [
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 48, 
+                "line": 23
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 66, 
+                "line": 23
+            }, 
+            "name": "scope"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 63, 
+                "line": 28
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "BatchableContext", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 47, 
+                "line": 33
+            }, 
+            "name": "bc"
+        }, 
+        {
+            "type": "PledgeAccountRollupBatch", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 28, 
+                "line": 18
+            }, 
+            "name": "b"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 59, 
+                "line": 38
+            }, 
+            "name": "accounts"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 39
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 44
+            }, 
+            "name": "opportunitiesByAccount"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 45
+            }, 
+            "name": "paymentsByAccount"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 47
+            }, 
+            "name": "account"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 86, 
+                "line": 56
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 57
+            }, 
+            "name": "opportunitiesByAccount"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 59
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 90, 
+                "line": 70
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 71
+            }, 
+            "name": "paymentsByAccount"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 73
+            }, 
+            "name": "payments"
+        }, 
+        {
+            "type": "npe01__OppPayment__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 78
+            }, 
+            "name": "payment"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 40, 
+                "line": 89
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 70, 
+                "line": 89
+            }, 
+            "name": "payments"
+        }, 
+        {
+            "type": "npe01__OppPayment__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 91
+            }, 
+            "name": "payment"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 40, 
+                "line": 98
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "npe01__OppPayment__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 64, 
+                "line": 98
+            }, 
+            "name": "payment"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 40, 
+                "line": 117
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 61, 
+                "line": 117
+            }, 
+            "name": "opportunities"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 119
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 40, 
+                "line": 126
+            }, 
+            "name": "a"
+        }, 
+        {
+            "type": "Opportunity", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 55, 
+                "line": 126
+            }, 
+            "name": "opp"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 49, 
+                "line": 145
+            }, 
+            "name": "a"
+        }
+    ], 
+    "id": "01p61000004xVTWAA2", 
+    "methods": [
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "execute", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "scope"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 23
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "start", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 31, 
+                "line": 28
+            }, 
+            "returnType": "QueryLocator", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "global"
+            ], 
+            "name": "finish", 
+            "parameters": [
+                {
+                    "type": "BatchableContext", 
+                    "name": "bc"
+                }
+            ], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 33
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "webService", 
+                "global"
+            ], 
+            "name": "calculatePledgeAccountRollups", 
+            "parameters": [], 
+            "visibility": "GLOBAL", 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 17
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "calculateAccountRollups", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "accounts"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 38
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "getRelatedOpportunities", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "opportunities"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 44, 
+                "line": 56
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "getRelatedPayments", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "opportunities"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 53, 
+                "line": 70
+            }, 
+            "returnType": "Map", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addTotals", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "payments"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 89
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addTotals", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }, 
+                {
+                    "type": "npe01__OppPayment__c", 
+                    "name": "payment"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 98
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addTotals", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "opportunities"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 117
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "addTotals", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }, 
+                {
+                    "type": "Opportunity", 
+                    "name": "opp"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 126
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "private", 
+                "static"
+            ], 
+            "name": "resetAccountTotals", 
+            "parameters": [
+                {
+                    "type": "Account", 
+                    "name": "a"
+                }
+            ], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 145
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
