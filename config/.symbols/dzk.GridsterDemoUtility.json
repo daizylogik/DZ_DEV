@@ -1,0 +1,1129 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [
+        {
+            "properties": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "teamId", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 13, 
+                        "line": 5
+                    }, 
+                    "type": "Id"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "teamName", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 17, 
+                        "line": 6
+                    }, 
+                    "type": "String"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "projects", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 41, 
+                        "line": 7
+                    }, 
+                    "type": "Map"
+                }
+            ], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "TeamProject", 
+                    "parameters": [], 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 10, 
+                        "line": 10
+                    }, 
+                    "type": null
+                }
+            ], 
+            "namespace": "dzk", 
+            "name": "TeamProject", 
+            "tableDeclaration": {
+                "type": "TeamProject", 
+                "modifiers": [
+                    "public"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 15, 
+                    "line": 4
+                }, 
+                "name": "TeamProject"
+            }, 
+            "key": null, 
+            "variables": [], 
+            "id": null, 
+            "methods": []
+        }, 
+        {
+            "properties": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "calendarDate", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 15, 
+                        "line": 17
+                    }, 
+                    "type": "Date"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "dayOfWeek", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 17, 
+                        "line": 19
+                    }, 
+                    "type": "String"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "label", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 17, 
+                        "line": 28
+                    }, 
+                    "type": "String"
+                }
+            ], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [], 
+            "namespace": "dzk", 
+            "name": "DateElement", 
+            "tableDeclaration": {
+                "type": "DateElement", 
+                "modifiers": [
+                    "public"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 15, 
+                    "line": 16
+                }, 
+                "name": "DateElement"
+            }, 
+            "key": null, 
+            "variables": [
+                {
+                    "type": "LIST", 
+                    "modifiers": [], 
+                    "references": [], 
+                    "location": {
+                        "column": 18, 
+                        "line": 21
+                    }, 
+                    "name": "listDay"
+                }, 
+                {
+                    "type": "Date", 
+                    "modifiers": [], 
+                    "references": [], 
+                    "location": {
+                        "column": 10, 
+                        "line": 22
+                    }, 
+                    "name": "startDate"
+                }, 
+                {
+                    "type": "Integer", 
+                    "modifiers": [], 
+                    "references": [], 
+                    "location": {
+                        "column": 13, 
+                        "line": 23
+                    }, 
+                    "name": "remainder"
+                }
+            ], 
+            "id": null, 
+            "methods": []
+        }, 
+        {
+            "properties": [
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "label", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 23, 
+                        "line": 37
+                    }, 
+                    "type": "String"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "id", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 23, 
+                        "line": 40
+                    }, 
+                    "type": "String"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "cssClass", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 23, 
+                        "line": 43
+                    }, 
+                    "type": "String"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "dataRow", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 46
+                    }, 
+                    "type": "Integer"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "dataCol", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 49
+                    }, 
+                    "type": "Integer"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "dataSizeX", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 52
+                    }, 
+                    "type": "Integer"
+                }, 
+                {
+                    "modifiers": [
+                        "public"
+                    ], 
+                    "name": "dataSizeY", 
+                    "visibility": "PUBLIC", 
+                    "references": [], 
+                    "location": {
+                        "column": 21, 
+                        "line": 55
+                    }, 
+                    "type": "Integer"
+                }
+            ], 
+            "externalReferences": [], 
+            "innerClasses": [], 
+            "interfaces": [], 
+            "constructors": [], 
+            "namespace": "dzk", 
+            "name": "MatrixItem", 
+            "tableDeclaration": {
+                "type": "MatrixItem", 
+                "modifiers": [
+                    "public"
+                ], 
+                "references": [], 
+                "location": {
+                    "column": 18, 
+                    "line": 34
+                }, 
+                "name": "MatrixItem"
+            }, 
+            "key": null, 
+            "variables": [], 
+            "id": null, 
+            "methods": []
+        }
+    ], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": "dzk", 
+    "name": "GridsterDemoUtility", 
+    "tableDeclaration": {
+        "type": "GridsterDemoUtility", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "GridsterDemoUtility"
+    }, 
+    "key": "01p61000006sNXEAA2", 
+    "variables": [
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 51, 
+                "line": 59
+            }, 
+            "name": "first"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 63, 
+                "line": 59
+            }, 
+            "name": "last"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 60
+            }, 
+            "name": "dates"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 62
+            }, 
+            "name": "current"
+        }, 
+        {
+            "type": "DateElement", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 63
+            }, 
+            "name": "dt"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 68, 
+                "line": 71
+            }, 
+            "name": "first"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 80, 
+                "line": 71
+            }, 
+            "name": "last"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 61, 
+                "line": 79
+            }, 
+            "name": "first"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 73, 
+                "line": 79
+            }, 
+            "name": "last"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 80
+            }, 
+            "name": "teamProjects"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 81
+            }, 
+            "name": "currentProjects"
+        }, 
+        {
+            "type": "dzk__Team__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 83
+            }, 
+            "name": "team"
+        }, 
+        {
+            "type": "TeamProject", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 89
+            }, 
+            "name": "teamProject"
+        }, 
+        {
+            "type": "dzk__Project__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 93
+            }, 
+            "name": "project"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 95
+            }, 
+            "name": "newList"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 99
+            }, 
+            "name": "keys"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 103
+            }, 
+            "name": "row"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 104
+            }, 
+            "name": "teamProjectList"
+        }, 
+        {
+            "type": "dzk__Project__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 109
+            }, 
+            "name": "lastProject"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 112
+            }, 
+            "name": "newRow"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 113
+            }, 
+            "name": "newList"
+        }, 
+        {
+            "type": "dzk__Project__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 55, 
+                "line": 135
+            }, 
+            "name": "project1"
+        }, 
+        {
+            "type": "dzk__Project__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 76, 
+                "line": 135
+            }, 
+            "name": "project2"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 43, 
+                "line": 140
+            }, 
+            "name": "first"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 55, 
+                "line": 140
+            }, 
+            "name": "last"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 79, 
+                "line": 140
+            }, 
+            "name": "teamProjects"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 110, 
+                "line": 140
+            }, 
+            "name": "matrix"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 141
+            }, 
+            "name": "row"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 142
+            }, 
+            "name": "col"
+        }, 
+        {
+            "type": "TeamProject", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 23, 
+                "line": 144
+            }, 
+            "name": "teamProject"
+        }, 
+        {
+            "type": "Map", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 145
+            }, 
+            "name": "currentTeamProjects"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 148
+            }, 
+            "name": "height"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 16, 
+                "line": 153
+            }, 
+            "name": "space"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 157
+            }, 
+            "name": "pRows"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 162
+            }, 
+            "name": "rowIndex"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 163
+            }, 
+            "name": "teamProjectList"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 166
+            }, 
+            "name": "space"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 171
+            }, 
+            "name": "projectIndex"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 172
+            }, 
+            "name": "colIndex"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 11, 
+                "line": 173
+            }, 
+            "name": "startDate"
+        }, 
+        {
+            "type": "dzk__Project__c", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 174
+            }, 
+            "name": "project"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 175
+            }, 
+            "name": "projectStartDate"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 15, 
+                "line": 179
+            }, 
+            "name": "projectEndDate"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 184
+            }, 
+            "name": "spaceBefore"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 191
+            }, 
+            "name": "projectLength"
+        }, 
+        {
+            "type": "MatrixItem", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 192
+            }, 
+            "name": "matrixItem"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 198
+            }, 
+            "name": "spaceAfter"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 43, 
+                "line": 216
+            }, 
+            "name": "first"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 55, 
+                "line": 216
+            }, 
+            "name": "last"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 78, 
+                "line": 216
+            }, 
+            "name": "matrix"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 217
+            }, 
+            "name": "dates"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 222
+            }, 
+            "name": "i"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 54, 
+                "line": 228
+            }, 
+            "name": "label"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 68, 
+                "line": 228
+            }, 
+            "name": "id"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 79, 
+                "line": 228
+            }, 
+            "name": "cssClass"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 21, 
+                "line": 229
+            }, 
+            "name": "dataRow"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 229
+            }, 
+            "name": "dataCol"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 55, 
+                "line": 229
+            }, 
+            "name": "dataSizeX"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 74, 
+                "line": 229
+            }, 
+            "name": "dataSizeY"
+        }, 
+        {
+            "type": "MatrixItem", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 231
+            }, 
+            "name": "item"
+        }
+    ], 
+    "id": "01p61000006sNXEAA2", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "getDates", 
+            "parameters": [
+                {
+                    "type": "Date", 
+                    "name": "first"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "last"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 37, 
+                "line": 59
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "getProjectsForCurrentMonth", 
+            "parameters": [
+                {
+                    "type": "Date", 
+                    "name": "first"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "last"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 36, 
+                "line": 71
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "mapProjectWrappers", 
+            "parameters": [
+                {
+                    "type": "Date", 
+                    "name": "first"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "last"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 37, 
+                "line": 79
+            }, 
+            "returnType": "LIST", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "isProjectOverlap", 
+            "parameters": [
+                {
+                    "type": "dzk__Project__c", 
+                    "name": "project1"
+                }, 
+                {
+                    "type": "dzk__Project__c", 
+                    "name": "project2"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 27, 
+                "line": 135
+            }, 
+            "returnType": "Boolean", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "populateTeams", 
+            "parameters": [
+                {
+                    "type": "Date", 
+                    "name": "first"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "last"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "teamProjects"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "matrix"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 140
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "populateDates", 
+            "parameters": [
+                {
+                    "type": "Date", 
+                    "name": "first"
+                }, 
+                {
+                    "type": "Date", 
+                    "name": "last"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "matrix"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 216
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "createMatrixItem", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "label"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "id"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "cssClass"
+                }, 
+                {
+                    "type": "Integer", 
+                    "name": "dataRow"
+                }, 
+                {
+                    "type": "Integer", 
+                    "name": "dataCol"
+                }, 
+                {
+                    "type": "Integer", 
+                    "name": "dataSizeX"
+                }, 
+                {
+                    "type": "Integer", 
+                    "name": "dataSizeY"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 30, 
+                "line": 228
+            }, 
+            "returnType": "MatrixItem", 
+            "type": null
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<apex:page controller="GridsterDemoController" showHeader="false" sidebar="false">
+	<apex:includescript value="{!URLFOR($Resource.jQuery213, 'jquery-2.1.3.min.js')}"/>
+    <apex:includescript value="{!URLFOR($Resource.gridster, 'jquery.gridster.min.js')}"/>
+    <apex:includescript value="{!URLFOR($Resource.gridster, 'jquery.gridster.with-extras.min.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.gridster, 'jquery.gridster.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.gridster, 'demo.css')}" />
+    
+    <script type="text/javascript">
+    
+		var j$ = jQuery.noConflict();
+    	j$(function () {
+            j$(".gridster ul").gridster({
+                widget_margins: [1, 1],
+                widget_base_dimensions: [80, 72]
+            });
+            
+            var gridster = j$(".gridster ul").gridster().data('gridster');
+            gridster.disable();
+            
+            /*j$( ".gridster .date > a" ).click(function() {
+  				event.preventDefault();
+			});*/
+            
+        });
+    </script>
+
+    <apex:form >
+	    <apex:pageMessages />
+	</apex:form>
+
+	<div class="gridster">
+    	<ul>
+            <!--<apex:repeat value="{!Matrix}" var="item">
+                <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
+                	<apex:outputText value="{!item.label}" escape="false" />
+                </li>
+            </apex:repeat>-->
+		</ul>
+    </div>
+
+
+</apex:page>

@@ -47,30 +47,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/classes/PledgeAccountRollupBatch.cls",
-			"settings":
-			{
-				"buffer_size": 5832,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/PledgeContactRollupBatch.cls",
-			"settings":
-			{
-				"buffer_size": 7464,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/classes/TestPledgeRollupBatch.cls",
-			"settings":
-			{
-				"buffer_size": 7659,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -129,9 +105,9 @@
 	],
 	"file_history":
 	[
-		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/TestPledgeRollupBatch.cls",
-		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeContactRollupBatch.cls",
 		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeAccountRollupBatch.cls",
+		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeContactRollupBatch.cls",
+		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/TestPledgeRollupBatch.cls",
 		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeAccountRollupBatch.cls-meta.xml",
 		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeContactRollupBatch.cls-meta.xml",
 		"/Users/vmartinov/Documents/MavensMate/DZ_DEV/src/classes/PledgeRollupBatch.cls-meta.xml",
@@ -199,95 +175,8 @@
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/classes/PledgeAccountRollupBatch.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5832,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								475,
-								475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/classes/PledgeContactRollupBatch.cls",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7464,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								93,
-								93
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/classes/TestPledgeRollupBatch.cls",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 7659,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
