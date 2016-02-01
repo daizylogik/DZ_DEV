@@ -11,17 +11,44 @@
     	j$(function () {
             j$(".gridster ul").gridster({
                 widget_margins: [1, 1],
-                widget_base_dimensions: [80, 72]
+                widget_base_dimensions: [100, 72],
+                avoid_overlapped_widgets: true,
+                draggable: {
+                start: function(e, ui, $widget) {
+                  //log.innerHTML = 'START position: ' + ui.position.top +' '+ ui.position.left + "<br >" + log.innerHTML;
+                  dragProject(ui);
+                },
+
+                /*drag: function(e, ui, $widget) {
+                  log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top +' '+ ui.pointer.diff_left + "<br >" + log.innerHTML;
+                },*/
+
+                stop: function(e, ui, $widget) {
+                  //log.innerHTML = 'STOP position: ' + ui.position.top +' '+ ui.position.left + "<br >" + log.innerHTML;
+                    dropProject(ui);
+                }
+              }
             });
             
             var gridster = j$(".gridster ul").gridster().data('gridster');
-            gridster.disable();
+            //gridster.disable();
             
             /*j$( ".gridster .date > a" ).click(function() {
   				event.preventDefault();
-			});*/
-            
+			});*/     
         });
+    
+        function dragProject(ui) {
+            alert('old row' + ui.$player.data('row'));
+            alert('old col' + ui.$player.data('col'));
+        }
+
+        function dropProject(ui) {
+            alert('new row' + ui.$player[0].dataset.row);
+            alert('new col' + ui.$player[0].dataset.col);
+        }
+
+
     </script>
 
     <apex:form >
@@ -30,11 +57,11 @@
 
 	<div class="gridster">
     	<ul>
-            <!--<apex:repeat value="{!Matrix}" var="item">
+            <apex:repeat value="{!Matrix}" var="item">
                 <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
                 	<apex:outputText value="{!item.label}" escape="false" />
                 </li>
-            </apex:repeat>-->
+            </apex:repeat>
 		</ul>
     </div>
 

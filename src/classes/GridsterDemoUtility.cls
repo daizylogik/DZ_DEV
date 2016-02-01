@@ -164,7 +164,7 @@ public with sharing class GridsterDemoUtility {
 				
 				if (teamProjectList.size() == 0) {
 					integer space = first.daysBetween(last) + 1;
-					matrix.add(createMatrixItem('', '', 'free', row , col + col, space, 1));
+					matrix.add(createMatrixItem('', '', 'free', row , col, space, 1));
 
 				} else {
 				
@@ -208,7 +208,7 @@ public with sharing class GridsterDemoUtility {
     		}
     				
     		// go to the next row
-    		row = row + height + 1;
+    		row = row + height;
     	}
 	}
     
@@ -231,6 +231,7 @@ public with sharing class GridsterDemoUtility {
         MatrixItem item = new MatrixItem();
         item.label = label;
         item.id = id;
+        item.cssClass = cssClass;
        	item.dataRow = dataRow;
         item.dataCol = dataCol;
         item.dataSizeX = dataSizeX;
