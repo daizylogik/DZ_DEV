@@ -646,12 +646,22 @@
             "name": "space"
         }, 
         {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 18, 
+                "line": 155
+            }, 
+            "name": "i"
+        }, 
+        {
             "type": "LIST", 
             "modifiers": [], 
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 157
+                "line": 160
             }, 
             "name": "pRows"
         }, 
@@ -661,7 +671,7 @@
             "references": [], 
             "location": {
                 "column": 20, 
-                "line": 162
+                "line": 165
             }, 
             "name": "rowIndex"
         }, 
@@ -671,7 +681,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 163
+                "line": 166
             }, 
             "name": "teamProjectList"
         }, 
@@ -681,7 +691,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 166
+                "line": 169
             }, 
             "name": "space"
         }, 
@@ -690,8 +700,18 @@
             "modifiers": [], 
             "references": [], 
             "location": {
-                "column": 14, 
+                "column": 19, 
                 "line": 171
+            }, 
+            "name": "i"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 177
             }, 
             "name": "projectIndex"
         }, 
@@ -701,7 +721,7 @@
             "references": [], 
             "location": {
                 "column": 14, 
-                "line": 172
+                "line": 178
             }, 
             "name": "colIndex"
         }, 
@@ -711,7 +731,7 @@
             "references": [], 
             "location": {
                 "column": 11, 
-                "line": 173
+                "line": 179
             }, 
             "name": "startDate"
         }, 
@@ -721,7 +741,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 174
+                "line": 180
             }, 
             "name": "project"
         }, 
@@ -731,7 +751,7 @@
             "references": [], 
             "location": {
                 "column": 15, 
-                "line": 175
+                "line": 181
             }, 
             "name": "projectStartDate"
         }, 
@@ -741,7 +761,7 @@
             "references": [], 
             "location": {
                 "column": 15, 
-                "line": 179
+                "line": 185
             }, 
             "name": "projectEndDate"
         }, 
@@ -751,7 +771,7 @@
             "references": [], 
             "location": {
                 "column": 18, 
-                "line": 184
+                "line": 190
             }, 
             "name": "spaceBefore"
         }, 
@@ -760,8 +780,18 @@
             "modifiers": [], 
             "references": [], 
             "location": {
+                "column": 24, 
+                "line": 193
+            }, 
+            "name": "i"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
                 "column": 18, 
-                "line": 191
+                "line": 200
             }, 
             "name": "projectLength"
         }, 
@@ -771,7 +801,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 192
+                "line": 201
             }, 
             "name": "matrixItem"
         }, 
@@ -781,9 +811,19 @@
             "references": [], 
             "location": {
                 "column": 19, 
-                "line": 198
+                "line": 207
             }, 
             "name": "spaceAfter"
+        }, 
+        {
+            "type": "Integer", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 25, 
+                "line": 210
+            }, 
+            "name": "i"
         }, 
         {
             "type": "Date", 
@@ -791,7 +831,7 @@
             "references": [], 
             "location": {
                 "column": 43, 
-                "line": 216
+                "line": 228
             }, 
             "name": "first"
         }, 
@@ -801,7 +841,7 @@
             "references": [], 
             "location": {
                 "column": 55, 
-                "line": 216
+                "line": 228
             }, 
             "name": "last"
         }, 
@@ -811,7 +851,7 @@
             "references": [], 
             "location": {
                 "column": 78, 
-                "line": 216
+                "line": 228
             }, 
             "name": "matrix"
         }, 
@@ -821,7 +861,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 217
+                "line": 229
             }, 
             "name": "dates"
         }, 
@@ -831,7 +871,7 @@
             "references": [], 
             "location": {
                 "column": 22, 
-                "line": 222
+                "line": 234
             }, 
             "name": "i"
         }, 
@@ -841,7 +881,7 @@
             "references": [], 
             "location": {
                 "column": 54, 
-                "line": 228
+                "line": 240
             }, 
             "name": "label"
         }, 
@@ -851,7 +891,7 @@
             "references": [], 
             "location": {
                 "column": 68, 
-                "line": 228
+                "line": 240
             }, 
             "name": "id"
         }, 
@@ -861,7 +901,7 @@
             "references": [], 
             "location": {
                 "column": 79, 
-                "line": 228
+                "line": 240
             }, 
             "name": "cssClass"
         }, 
@@ -871,7 +911,7 @@
             "references": [], 
             "location": {
                 "column": 21, 
-                "line": 229
+                "line": 241
             }, 
             "name": "dataRow"
         }, 
@@ -881,7 +921,7 @@
             "references": [], 
             "location": {
                 "column": 38, 
-                "line": 229
+                "line": 241
             }, 
             "name": "dataCol"
         }, 
@@ -891,7 +931,7 @@
             "references": [], 
             "location": {
                 "column": 55, 
-                "line": 229
+                "line": 241
             }, 
             "name": "dataSizeX"
         }, 
@@ -901,7 +941,7 @@
             "references": [], 
             "location": {
                 "column": 74, 
-                "line": 229
+                "line": 241
             }, 
             "name": "dataSizeY"
         }, 
@@ -911,7 +951,7 @@
             "references": [], 
             "location": {
                 "column": 20, 
-                "line": 231
+                "line": 243
             }, 
             "name": "item"
         }
@@ -1075,7 +1115,7 @@
             "references": [], 
             "location": {
                 "column": 24, 
-                "line": 216
+                "line": 228
             }, 
             "returnType": "void", 
             "type": null
@@ -1120,7 +1160,7 @@
             "references": [], 
             "location": {
                 "column": 30, 
-                "line": 228
+                "line": 240
             }, 
             "returnType": "MatrixItem", 
             "type": null

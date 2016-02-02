@@ -61,7 +61,7 @@
 
     </script>
 
-    <apex:form >
+    <apex:form id="myGrid">
 	    <apex:pageMessages />
         <apex:actionFunction name="updateProject" action="{!saveProject}" oncomplete="window.location.reload();">      
              <apex:param id="project" name="project" assignTo="{!nameParam}" value="" />
@@ -70,15 +70,14 @@
         </apex:actionFunction> 
 	</apex:form>
 
-	<div class="gridster">
-    	<ul>
-            <apex:repeat value="{!Matrix}" var="item">
-                <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
-                	<apex:outputText value="{!item.label}" escape="false" />
-                </li>
-            </apex:repeat>
-		</ul>
-    </div>
-
+    <div class="gridster">
+            <ul>
+                <apex:repeat value="{!Matrix}" var="item">
+                    <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
+                        <apex:outputText value="{!item.label}" escape="false" />
+                    </li>
+                </apex:repeat>
+            </ul>
+        </div>
 
 </apex:page>

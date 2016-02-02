@@ -151,7 +151,10 @@ public with sharing class GridsterDemoUtility {
     		// no projects
     		if (currentTeamProjects.size() == 0) {
     			integer space = first.daysBetween(last) + 1;
-				matrix.add(createMatrixItem('', '', 'free', row , col, space, 1));
+				//matrix.add(createMatrixItem('', '', 'free', row , col, space, 1));
+				for (Integer i = 0; i < space; i++) {
+					matrix.add(createMatrixItem('', '', 'free', row, col + i, 1, 1));
+				}
     		}
             
     		List<integer> pRows = new List<integer>();
@@ -164,7 +167,10 @@ public with sharing class GridsterDemoUtility {
 				
 				if (teamProjectList.size() == 0) {
 					integer space = first.daysBetween(last) + 1;
-					matrix.add(createMatrixItem('', '', 'free', row , col, space, 1));
+					//matrix.add(createMatrixItem('', '', 'free', row , col, space, 1));
+					for (Integer i = 0; i < space; i++) {
+    					matrix.add(createMatrixItem('', '', 'free', row, col + i, 1, 1));
+    				}
 
 				} else {
 				
@@ -183,7 +189,10 @@ public with sharing class GridsterDemoUtility {
 	    				// space before
 	    				integer spaceBefore = startDate.daysBetween(projectStartDate);
 		    			if (0 < spaceBefore) {
-		    				matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex, spaceBefore, 1));
+		    				//matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex, spaceBefore, 1));
+		    				for (Integer i = 0; i < spaceBefore; i++) {
+		    					matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex + i, 1, 1));
+		    				}
 		    				colIndex = colIndex + spaceBefore;
 		    			}
 					
@@ -197,7 +206,10 @@ public with sharing class GridsterDemoUtility {
 	    				if (projectIndex == teamProjectList.size() - 1) {
 	    					integer spaceAfter = projectEndDate.daysBetween(last);
 			    			if (0 < spaceAfter) {
-			    				matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex, spaceAfter, 1));
+			    				//matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex, spaceAfter, 1));
+			    				for (Integer i = 0; i < spaceAfter; i++) {
+		    						matrix.add(createMatrixItem('', '', 'free', row + rowIndex, col + colIndex + i, 1, 1));
+		    					}
 			    			}
 	    				}
 	    				
