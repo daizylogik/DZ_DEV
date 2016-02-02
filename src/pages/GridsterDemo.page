@@ -6,6 +6,7 @@
     <apex:stylesheet value="{!URLFOR($Resource.gridster, 'demo.css')}" />
     
     <script type="text/javascript">
+        var projectName = "";
     
 		var j$ = jQuery.noConflict();
     	j$(function () {
@@ -15,37 +16,46 @@
                 avoid_overlapped_widgets: true,
                 draggable: {
                 start: function(e, ui, $widget) {
-                  //log.innerHTML = 'START position: ' + ui.position.top +' '+ ui.position.left + "<br >" + log.innerHTML;
                   dragProject(ui);
                 },
 
-                /*drag: function(e, ui, $widget) {
-                  log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top +' '+ ui.pointer.diff_left + "<br >" + log.innerHTML;
-                },*/
-
                 stop: function(e, ui, $widget) {
-                  //log.innerHTML = 'STOP position: ' + ui.position.top +' '+ ui.position.left + "<br >" + log.innerHTML;
                     dropProject(ui);
                 }
               }
             });
-            
-            var gridster = j$(".gridster ul").gridster().data('gridster');
-            //gridster.disable();
-            
-            /*j$( ".gridster .date > a" ).click(function() {
-  				event.preventDefault();
-			});*/     
+
+            // disable dragging for dates
+            j$(".date").mousedown(function(event){
+                event.stopPropagation();
+            });
+
+            // disable dragging for teams
+            j$(".header").mousedown(function(event){
+                event.stopPropagation();
+            });
+
+            // disable dragging for free days
+            j$(".free").mousedown(function(event){
+                event.stopPropagation();
+            });
         });
+
+        
     
-        function dragProject(ui) {
-            alert('old row' + ui.$player.data('row'));
-            alert('old col' + ui.$player.data('col'));
+        function dragProject(ui) {            
+            var row = ui.$player.data('row');
+            var col =  ui.$player.data('col');
+            var project = j$("li[data-row='" + row +"'][data-col='" + col + "']");
+            projectName = project.text().replace(/[\n\r]/g, '').trim();
         }
 
         function dropProject(ui) {
-            alert('new row' + ui.$player[0].dataset.row);
-            alert('new col' + ui.$player[0].dataset.col);
+            var row = ui.$player[0].dataset.row;
+            var col = ui.$player[0].dataset.col;
+            var team =j$("li[data-row='" + row + "'][data-col='" + 1 + "']").text().replace(/[\n\r]/g, '').trim();
+            var dt =j$("li[data-row='" + "1" + "'][data-col='" + col + "']").text().replace(/[\n\r]/g, '').trim();
+            updateProject(projectName, team, dt);
         }
 
 
@@ -53,6 +63,11 @@
 
     <apex:form >
 	    <apex:pageMessages />
+        <apex:actionFunction name="updateProject" action="{!saveProject}" oncomplete="window.location.reload();">      
+             <apex:param id="project" name="project" assignTo="{!nameParam}" value="" />
+             <apex:param id="team" name="team" assignTo="{!teamParam}" value="" />
+             <apex:param id="dt" name="dt" assignTo="{!dateParam}" value="" />
+        </apex:actionFunction> 
 	</apex:form>
 
 	<div class="gridster">
