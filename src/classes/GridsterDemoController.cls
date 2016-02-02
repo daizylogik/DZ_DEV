@@ -20,16 +20,13 @@ public with sharing class GridsterDemoController {
 	}
 
 	// update the dragged project
-	public void saveProject() {
+	public PageReference saveProject() {
         if (!String.isBlank(nameParam) && !String.isBlank(teamParam) && !String.isBlank(dateParam)) {
         	Project__c project = [select Id, Project_Name__c, Team__c, Start_Date__c, End_Date__c 
         					from Project__c where Project_Name__c = :nameParam];
 
         	Team__c team = [select Id
         					from Team__c where Team_Name__c = :teamParam];
-
-        	system.debug('project' + project);
-        	system.debug('team' + team);
 
         	 if (project != null && team != null) {
         	 	project.Team__c = team.Id;
@@ -38,6 +35,7 @@ public with sharing class GridsterDemoController {
         	 	update project;
         	 }
         }
+        return null;
     }
 
     // parse the date

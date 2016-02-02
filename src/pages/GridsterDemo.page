@@ -1,4 +1,4 @@
-<apex:page controller="GridsterDemoController" showHeader="false" sidebar="false">
+<apex:page controller="GridsterDemoController" showHeader="false" sidebar="false" id="thePage">
 	<apex:includescript value="{!URLFOR($Resource.jQuery213, 'jquery-2.1.3.min.js')}"/>
     <apex:includescript value="{!URLFOR($Resource.gridster, 'jquery.gridster.min.js')}"/>
     <apex:includescript value="{!URLFOR($Resource.gridster, 'jquery.gridster.with-extras.min.js')}"/>
@@ -18,7 +18,9 @@
                 start: function(e, ui, $widget) {
                   dragProject(ui);
                 },
-
+                /*drag: function(e, ui, $widget) {
+                    log.innerHTML = 'DRAG offset: ' + ui.pointer.diff_top + ' ' + ui.pointer.diff_left + "<br >" + log.innerHTML;
+                },*/
                 stop: function(e, ui, $widget) {
                     dropProject(ui);
                 }
@@ -53,9 +55,9 @@
         function dropProject(ui) {
             var row = ui.$player[0].dataset.row;
             var col = ui.$player[0].dataset.col;
-            var team =j$("li[data-row='" + row + "'][data-col='" + 1 + "']").text().replace(/[\n\r]/g, '').trim();
-            var dt =j$("li[data-row='" + "1" + "'][data-col='" + col + "']").text().replace(/[\n\r]/g, '').trim();
-            updateProject(projectName, team, dt);
+            var teamName =j$("li[data-row='" + row + "'][data-col='" + 1 + "']").text().replace(/[\n\r]/g, '').trim();
+            var dateValue =j$("li[data-row='" + "1" + "'][data-col='" + col + "']").text().replace(/[\n\r]/g, '').trim();
+            updateProject(projectName, teamName, dateValue);
         }
 
 
@@ -63,21 +65,22 @@
 
     <apex:form id="myGrid">
 	    <apex:pageMessages />
-        <apex:actionFunction name="updateProject" action="{!saveProject}" oncomplete="window.location.reload();">      
-             <apex:param id="project" name="project" assignTo="{!nameParam}" value="" />
-             <apex:param id="team" name="team" assignTo="{!teamParam}" value="" />
-             <apex:param id="dt" name="dt" assignTo="{!dateParam}" value="" />
+        <apex:actionFunction name="updateProject" action="{!saveProject}" reRender="thePage" oncomplete="location.reload();" >      
+             <apex:param name="projectName" assignTo="{!nameParam}" value="" />
+             <apex:param name="teamName" assignTo="{!teamParam}" value="" />
+             <apex:param name="dateValue" assignTo="{!dateParam}" value="" />
         </apex:actionFunction> 
 	</apex:form>
 
+
     <div class="gridster">
-            <ul>
-                <apex:repeat value="{!Matrix}" var="item">
-                    <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
-                        <apex:outputText value="{!item.label}" escape="false" />
-                    </li>
-                </apex:repeat>
-            </ul>
-        </div>
+        <ul>
+            <apex:repeat value="{!Matrix}" var="item">
+                <li class="{!item.cssClass}" data-row="{!item.dataRow}" data-col="{!item.dataCol}" data-sizex="{!item.dataSizeX}" data-sizey="{!item.dataSizeY}">
+                    <apex:outputText value="{!item.label}" escape="false" />
+                </li>
+            </apex:repeat>
+        </ul>
+    </div>
 
 </apex:page>
