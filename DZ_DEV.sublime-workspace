@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"date",
+				"dateParam"
+			],
+			[
+				"te",
+				"teamParam"
+			],
+			[
+				"on",
+				"oncomplete	(String)"
+			],
+			[
 				"Pa",
 				"PageReference	[Standard Apex Class]"
 			],
@@ -51,7 +63,7 @@
 			"file": "src/classes/GridsterDemoController.cls",
 			"settings":
 			{
-				"buffer_size": 93,
+				"buffer_size": 1883,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +71,7 @@
 			"file": "src/classes/GridsterDemoUtility.cls",
 			"settings":
 			{
-				"buffer_size": 7995,
+				"buffer_size": 8606,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +79,7 @@
 			"file": "src/pages/GridsterDemo.page",
 			"settings":
 			{
-				"buffer_size": 1516,
+				"buffer_size": 3597,
 				"line_ending": "Unix"
 			}
 		}
@@ -171,6 +183,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"header",
 			"thisYear",
 			"accounts",
 			"DEBUG>>>",
@@ -200,7 +213,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -209,23 +222,25 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 93,
+						"buffer_size": 1883,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								811,
+								811
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage"
+							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -237,26 +252,26 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7995,
+						"buffer_size": 8606,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5920,
-								5920
+								4813,
+								4813
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/MavensMate/sublime/lang/Apex.tmLanguage"
 						},
-						"translation.x": 9.0,
-						"translation.y": 2603.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -265,26 +280,28 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1516,
+						"buffer_size": 3597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1482,
-								1482
+								2615,
+								2615
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 618.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -323,7 +340,7 @@
 	"menu_visible": true,
 	"output.MavensMate-OutputPanel":
 	{
-		"height": 100.0
+		"height": 178.0
 	},
 	"output.find_results":
 	{
@@ -371,7 +388,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 269.0,
+	"side_bar_width": 200.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

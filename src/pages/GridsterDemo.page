@@ -63,6 +63,10 @@
 
     </script>
 
+    <p>
+        <h1 style="font-size: 16px;">Drag the Projects to assign them to a different Team on a different Date</h1>
+    </p>
+
     <apex:form id="myGrid">
 	    <apex:pageMessages />
         <apex:actionFunction name="updateProject" action="{!saveProject}" reRender="thePage" oncomplete="location.reload();" >      
